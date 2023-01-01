@@ -90,14 +90,45 @@ public class Main {
         System.out.println("Если возраст ребёнка равен " + vozrast + ",то ему можно кататься на аттракционе без сопровождения");
 
         // Задача 6
-        int Totalseats = 102;
-
-
-
-
-
-
-
-
-    }
-}
+        int totalSeats = 102;
+        int seat = 60;
+        int stand = totalSeats - seat;
+        int usedSeat = 60;
+        int usedStand = 42;
+        System.out.println("Всего стоячих мест в вагоне- " + stand);
+        if (usedSeat < 60) {
+            System.out.println("Сидячие места в вагоне есть");
+        } else if (usedSeat >= 60) {
+            System.out.println("Сидячих мест в вагоне нет");
+            if (usedStand < 42) {
+                System.out.println("Стоячие места в вагоне есть");
+            } else if (usedStand >= 42) {
+                System.out.println("Стоячих мест в вагоне нет");
+                System.out.println("В вагоне занято  " + (usedSeat + usedStand) + " места. Свободных мест нет");
+            }
+            // Задача 7
+            int one = 96;
+            int two = 98;
+            int three = 1115;
+            if (one > two) {
+                if (one >= three) {
+                    System.out.println("Максимальное число-" + one);
+                } else {
+                    System.out.println("Максимальное число-" + three);
+                }
+            } else if (two > one) {
+                if (two >= three) {
+                    System.out.println("Максимальное число-" + two);
+                } else {
+                    System.out.println("Максимальное число-" + three);
+                }
+            } else {
+                if (one > three) {
+                    System.out.println("Максимальное число-" + one);
+                } else if (three > one) {
+                    System.out.println("Максимальное число-" + three);
+                } else {
+                    System.out.println("Все три числа равны");
+                }
+            }
+        }      }   }
