@@ -107,9 +107,9 @@ public class Main {
                 System.out.println("В вагоне занято  " + (usedSeat + usedStand) + " места. Свободных мест нет");
             }
             // Задача 7
-            int one = 96;
-            int two = 98;
-            int three = 1115;
+            int one = 1345;
+            int two = 256;
+            int three = 178;
             if (one > two) {
                 if (one >= three) {
                     System.out.println("Максимальное число-" + one);
