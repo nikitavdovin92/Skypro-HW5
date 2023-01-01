@@ -128,7 +128,7 @@ public class Main {
                 } else if (three > one) {
                     System.out.println("Максимальное число-" + three);
                 } else {
-                    System.out.println("Все три числа равны");
+                    System.out.println("Все три числа равны!");
                 }
             }
         }      }   }
